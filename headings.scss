@@ -1,0 +1,46 @@
+h1 {
+  letter-spacing: -0.04em;
+  color: var(--c-white);
+  -webkit-text-fill-color: var(--c-white);
+  -webkit-text-stroke-color: var(--c-white);
+  -webkit-text-stroke-width: 2px;
+  font-family: Work Sans;
+  font-size: 130px;
+  font-weight: 900;
+  line-height: 0.8;
+  @include respond(phone) {   
+   font-size: 80px;
+   -webkit-text-stroke-width: 1px;
+  }
+}
+
+h2 {
+  font-size: 2.3em;
+  color: var(--c-navy);
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.1em;
+  color: var(--c-white);
+}
+
+.great-minds-heading {
+  padding-top: 35px;
+  color: var(--c-white);
+  text-align: center;
+  font-size: 48px;
+  
+
+}
+
+.section-title {
+  max-width: 600px;
+  display: inline-block
+}
+
+.secondary-header {
+  font-size: 3.3em
+}

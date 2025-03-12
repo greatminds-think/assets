@@ -1,0 +1,126 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kollektif', sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--c-white);
+  overflow-x: hidden;
+  // background-image: url("../img/bg.png");
+  // background-size:cover;
+  // background-repeat:no-repeat;
+  // background-position: center;
+}
+
+p {
+  font-size: 18px;
+font-weight: 400;
+letter-spacing: .01em;
+line-height: 28px;
+padding-bottom: 20px;
+text-transform: none;
+text-align: center;
+}
+
+
+.centre {
+  text-align: center;
+}
+
+.main {
+  max-width: 50em;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+.wide {
+  max-width: 60em;
+}
+.layout-half {
+  box-sizing: border-box;
+  width: 100%;
+  @include on-breakpoint(tablet-up) {
+    width: 45%;
+    float: left;
+    margin-right: 35px;
+}
+}
+
+.layout-one-third {
+  box-sizing: border-box;
+  width: 100%;
+  @include on-breakpoint(tablet-up) {
+    width: 30%;
+    float: left;
+    margin-right: 35px;
+}
+}
+.layout-two-thirds {
+  box-sizing: border-box;
+  width: 100%;
+  @include on-breakpoint(tablet-up) {
+    width: 60%;
+    float: left;
+    margin-right: 35px;
+}
+}
+
+.layout-one-fifth {
+  padding-top:20px;
+
+  box-sizing: border-box;
+  width: 100%;
+  display: inline-flex;
+  @include on-breakpoint(tablet-up) {
+    text-align:center;
+    width: 20%;
+    display: block;
+    float: left;
+}
+}
+
+
+
+.layout-three-fifths {
+  box-sizing: border-box;
+  width: 100%;
+  @include on-breakpoint(tablet-up) {
+    padding-left: 35px;
+    text-align:center;
+    width: 70%;
+    display: block;
+    float: left;
+}
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+  margin-top: 20px
+}
+
+
+.intro-paragraph {
+  padding-top: 45px;
+  @include respond(phone) {   
+    padding-top: 0px;
+   }
+}
+
+.s-padding-top {
+  padding-top: 20px;
+}
+
+.m-padding-top {
+  padding-top: 60px;
+}
+
+.l-padding-top {
+  padding-top: 100px;
+}

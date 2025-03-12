@@ -1,1 +1,2 @@
-# assets
+# Great Minds
+
